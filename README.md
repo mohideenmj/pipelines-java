@@ -1,3 +1,4 @@
+[![Build Status](https://dev.azure.com/mohideen49/Winappiumtests/_apis/build/status/mohideenmj.pipelines-java?branchName=master)](https://dev.azure.com/mohideen49/Winappiumtests/_build/latest?definitionId=2&branchName=master)
 
 # Contributing
 
