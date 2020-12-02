@@ -7,9 +7,12 @@ trigger:
 - main
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: 'windows-latest'
 
 steps:
+- task: Windows Application Driver@0
+  inputs:
+    OperationType: 'Start'
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
@@ -20,3 +23,7 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
+
+- task: Windows Application Driver@0
+  inputs:
+    OperationType: 'Stop'
